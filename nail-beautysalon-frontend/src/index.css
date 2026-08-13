@@ -109,3 +109,260 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+
+
+/* Salon Navbar */
+
+.salon-navbar {
+    background-color: #fffaf7;
+    padding: 18px 0;
+    border-bottom: 1px solid #eee3dc;
+}
+
+.brand-name {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.brand-subtitle {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: -2px;
+}
+
+.salon-navbar .nav-link {
+    color: #3d3532;
+    margin: 0 10px;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+}
+
+.salon-navbar .nav-link:hover {
+    color: #9a6f62;
+}
+
+.book-now-btn {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 22px;
+    background-color: #8f675b;
+    color: white;
+}
+
+.book-now-btn:hover {
+    background-color: #725046;
+}
+
+/* Hero Section */
+
+.hero-section {
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.92) 0%,
+            rgba(0, 0, 0, 0.70) 50%,
+            rgba(0, 0, 0, 0.25) 100%
+        ),
+        url('/Background.jpg') center / cover no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+    padding: 80px 0;
+}
+
+.hero-eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+
+.hero-content h1 {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 520px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #e5e5e5;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    border-radius: 30px;
+    padding: 12px 26px;
+    font-weight: 500;
+}
+
+.primary-button {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #000000;
+}
+
+.primary-button:hover {
+    background-color: #725046;
+    border-color: #725046;
+}
+
+.secondary-button {
+    background-color: transparent;
+    border: 1px solid #8f675b;
+    color: #8f675b;
+}
+
+.secondary-button:hover {
+    background-color: #8f675b;
+    border-color: #8f675b;
+}
+
+/* Footer */
+
+.salon-footer {
+    background-color: #050505;
+    color: #ffffff;
+    padding: 70px 0 25px;
+    border-top: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.footer-brand {
+    color: #d4af37;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.salon-footer p {
+    color: #999999;
+    line-height: 1.7;
+}
+
+.salon-footer h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.salon-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.salon-footer li {
+    margin-bottom: 10px;
+}
+
+.salon-footer a {
+    color: #999999;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.salon-footer a:hover {
+    color: #d4af37;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #222222;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+
+/* Employee Dashboard */
+
+.employee-dashboard {
+    min-height: calc(100vh - 80px);
+    background: #080808;
+    color: #ffffff;
+    padding: 70px 0;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.dashboard-eyebrow {
+    color: #d4af37;
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.dashboard-header p {
+    color: #999999;
+}
+
+.dashboard-card {
+    height: 100%;
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 0;
+}
+
+.dashboard-card h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    color: #999999;
+    min-height: 50px;
+}
+
+.dashboard-button,
+.logout-button {
+    background: #d4af37;
+    border-color: #d4af37;
+    color: #000000;
+    font-weight: 600;
+}
+
+.dashboard-button:hover,
+.logout-button:hover {
+    background: #f0cf55;
+    border-color: #f0cf55;
+    color: #000000;
+}
+
+.logout-button {
+    padding: 10px 25px;
+}
