@@ -15,7 +15,11 @@ Date: 05 July 2026
 
 @Repository
 public interface AppointmentRepository extends JpaRepository<Appointment, String> {
-    List<Appointment> findAppointmentsBy(Address address);
+    List<Appointment> findByCustomerId(String customerId);
 
-    String AppointmentId(String appointmentId);
+    List<Appointment> findAppointmentsByAddress(Address address);
+
+    List<Appointment> findByAddress_City(String city);
+
+    //String AppointmentId(String appointmentId);
 }

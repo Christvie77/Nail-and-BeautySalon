@@ -18,6 +18,7 @@ import org.springframework.http.*;
 import za.ac.cput.nailbeautysalon.domain.Product;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.skyscreamer.jsonassert.JSONAssert.assertEquals;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestMethodOrder(MethodOrderer.MethodName.class)
@@ -57,6 +58,9 @@ class ProductControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
 
         System.out.println(response.getBody());
+    }
+
+    private void assertEquals(HttpStatus httpStatus, HttpStatusCode statusCode) {
     }
 
     @Test
@@ -113,5 +117,4 @@ class ProductControllerTest {
         System.out.println(response.getBody());
     }
 }
-
 

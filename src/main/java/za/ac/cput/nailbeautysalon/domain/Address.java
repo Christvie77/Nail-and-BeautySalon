@@ -3,6 +3,7 @@ package za.ac.cput.nailbeautysalon.domain;
    Address POJO class
    Author: M Hlaba (223031437)
    Date: 22 June 2026 */
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.IdClass;
@@ -11,16 +12,22 @@ import jakarta.persistence.IdClass;
 @IdClass(AddressId.class)
 public class Address {
     @Id
+    @Column(length = 20)
     private String streetNumber;
     @Id
+    @Column(length = 100)
     private String streetName;
     @Id
+    @Column(length = 80)
     private String city;
     @Id
+    @Column(length = 80)
     private String suburb;
     @Id
+    @Column(length = 60)
     private String province;
     @Id
+    @Column(length = 20)
     private int postalCode;
 
     protected Address(){}
@@ -56,6 +63,17 @@ public class Address {
 
     public int getPostalCode() {
         return postalCode;
+    }
+
+    public AddressId getAddressId() {
+        return new AddressId(
+                this.streetNumber,
+                this.streetName,
+                this.city,
+                this.suburb,
+                this.province,
+                this.postalCode
+        );
     }
 
     @Override
